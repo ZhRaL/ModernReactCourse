@@ -10,21 +10,17 @@
   </head>
   <body>
     <div id="root"></div>
-    <script>
+    <script type="text/babel">
       function Header() {
-        return React.createElement(
-          "header",
-          null,
-          React.createElement("h2", null, "MyApp Header")
-        );
+        return <h2> Welcome to My React App </h2>;
       }
 
       function App() {
-        return React.createElement(
-          "h1",
-          null,
-          React.createElement(Header),
-          React.createElement("h1", null, "Hello React")
+        return (
+          <div>
+            <Header />
+            <h1> Hello, React </h1>;
+          </div>
         );
       }
 
